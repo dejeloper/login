@@ -8,6 +8,9 @@ import { poppins } from "./ui/fonts";
 export const metadata: Metadata = {
   title: "Login",
   description: "DescriptionLogin",
+  icons: {
+    icon: ["./favicon.svg"],
+  },
 };
 
 export default function RootLayout({
