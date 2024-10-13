@@ -27,11 +27,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex flex-col min-h-screen overflow-hidden bg-background text-foreground">
+          <div className="flex flex-col min-h-screen overflow-hidden bg-background text-foreground w-full">
             <Nav />
-            <div className="flex flex-col mt-[84px] h-[calc(100%-104px)] my-4 md:mx-12 mx-6 p-4 rounded-md lg:w-3/4 lg:mx-auto">
-              {children}
-            </div>
+            <div className="flex flex-col mt-[64px] rounded-md">{children}</div>
           </div>
         </ThemeProvider>
       </body>
