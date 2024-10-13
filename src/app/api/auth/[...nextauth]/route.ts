@@ -3,7 +3,7 @@ import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import db from "@/lib/prisma";
 
-export const authOptions = {
+const authOptions = {
   providers: [
     CredentialsProvider({
       name: "Credentials",
@@ -44,7 +44,6 @@ export const authOptions = {
   pages: {
     signIn: "/auth/login",
   },
-  callbacks: {},
   secret: process.env.JWT_SECRET,
 };
 
